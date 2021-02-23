@@ -4,8 +4,6 @@ import com.atguigu.pojo.User;
 
 public interface UserDao {
 
-
-
     /**
      * 根据用户名查询用户信息
      * @param username 用户名
@@ -27,5 +25,6 @@ public interface UserDao {
      * @return 返回-1表示操作失败，其他是sql语句影响的行数
      */
     public int saveUser(User user);
+
 
 }
