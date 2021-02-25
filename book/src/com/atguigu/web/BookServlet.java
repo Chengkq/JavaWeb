@@ -42,7 +42,7 @@ public class BookServlet extends BaseServlet{
 
     protected void add(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int pageNo = WebUtils.parseInt(req.getParameter("pageNo"), 0);
-        pageNo += 1;
+        pageNo+=1;
         //        1、获取请求的参数==封装成为Book对象
         Book book = WebUtils.copyParamToBean(req.getParameterMap(),new Book());
 //        2、调用BookService.addBook()保存图书

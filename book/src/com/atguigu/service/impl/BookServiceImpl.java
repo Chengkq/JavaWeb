@@ -50,7 +50,7 @@ public class BookServiceImpl implements BookService {
         // 求总页码
         Integer pageTotal = pageTotalCount / pageSize;
         if (pageTotalCount % pageSize > 0) {
-            pageTotal += 1;
+            pageTotal+=1;
         }
         // 设置总页码
         page.setPageTotal(pageTotal);
